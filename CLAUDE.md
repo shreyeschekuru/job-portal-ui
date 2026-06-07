@@ -42,7 +42,11 @@ job-portal-ui/
 
 ## Git Conventions
 
-### Branching
+### Branching — REQUIRED
+
+**Never commit directly to `main`.** Every change — features, fixes, docs, chores — must be developed on a dedicated branch and merged via a pull request.
+
+Branch naming format:
 
 ```
 feature/add-job-filter-sidebar         # New features
@@ -53,9 +57,12 @@ refactor/simplify-auth-context         # Code refactoring
 style/mobile-job-card-spacing          # Visual/style changes
 ```
 
-- Branch off `main` for all new work
-- Keep branches short-lived; open a PR when ready
-- Delete branches after merging
+Workflow:
+
+1. `git checkout -b <type>/<short-description>` from an up-to-date `main`
+2. Make commits on the branch
+3. Push and open a PR targeting `main`
+4. Merge only after review; delete the branch after merging
 
 ### Commit Messages
 
@@ -74,11 +81,14 @@ style: fix spacing on mobile job list
 - Keep the subject line under 72 characters
 - Add a body for non-obvious changes
 
-### Pull Requests
+### Pull Requests — REQUIRED
 
-- PR title should match the commit message format
+**All changes to `main` must go through a PR.** Direct pushes to `main` are not allowed.
+
+- PR title must match the commit message format
 - Include a summary and test plan in the PR description
 - Target `main` as the base branch
+- Keep PRs focused — one feature or fix per PR
 
 ## Coding Standards
 
