@@ -159,6 +159,15 @@ const Footer = () => {
               >
                 <span className="relative z-10">Contact Us</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -inset-2"></div>
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-56 bg-gray-800 border border-gray-700 rounded-xl p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-xl">
+                  <p className="text-white font-semibold text-xs mb-2">Get in Touch</p>
+                  <div className="space-y-1 text-xs text-gray-300">
+                    <p>📧 support@jobportal.com</p>
+                    <p>📞 +1 (800) 123-4567</p>
+                    <p>🕒 Mon–Fri, 9AM–6PM EST</p>
+                  </div>
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-800"></div>
+                </div>
               </Link>
             </div>
             <div className="text-center md:text-right">
