@@ -60,9 +60,10 @@ style/mobile-job-card-spacing          # Visual/style changes
 Workflow:
 
 1. `git checkout -b <type>/<short-description>` from an up-to-date `main`
-2. Make commits on the branch
-3. Push and open a PR targeting `main`
-4. Merge only after review; delete the branch after merging
+2. Immediately push the branch to remote: `git push -u origin <type>/<short-description>`
+3. Make commits on the branch
+4. Push and open a PR targeting `main`
+5. Merge only after review; delete the branch after merging
 
 ### Commit Messages
 
