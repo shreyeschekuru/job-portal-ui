@@ -73,7 +73,7 @@ function App() {
                   <Route
                     path="post-job"
                     element={
-                      <ProtectedRoute allowedRoles={['ROLE_EMPLOYER']}>
+                      <ProtectedRoute>
                         <PostJob />
                       </ProtectedRoute>
                     }
