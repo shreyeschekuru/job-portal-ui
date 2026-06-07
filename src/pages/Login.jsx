@@ -18,7 +18,7 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const from = location.state?.from?.pathname || "/";
+  const from = location.state?.from?.pathname || "/coming-soon";
 
   // Check if there's a success message from registration
   useEffect(() => {

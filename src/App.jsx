@@ -25,6 +25,7 @@ import Dashboard from "./pages/admin/Dashboard";
 import CompanyManagement from "./pages/admin/CompanyManagement";
 import EmployerManagement from "./pages/admin/EmployerManagement";
 import ContactMessages from "./pages/admin/ContactMessages";
+import ComingSoon from "./pages/ComingSoon";
 
 function App() {
   return (
@@ -73,7 +74,7 @@ function App() {
                   <Route
                     path="post-job"
                     element={
-                      <ProtectedRoute>
+                      <ProtectedRoute allowedRoles={['ROLE_EMPLOYER']}>
                         <PostJob />
                       </ProtectedRoute>
                     }
@@ -132,6 +133,7 @@ function App() {
                   {/* Auth Routes */}
                   <Route path="login" element={<Login />} />
                   <Route path="register" element={<Register />} />
+                  <Route path="coming-soon" element={<ComingSoon />} />
 
                   {/* Contact Route */}
                   <Route path="contact" element={<Contact />} />
